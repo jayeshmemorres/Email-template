@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last page</title>
+    <style>
+        .Wrapper {
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            margin-top: 30px;
+            grid-template-rows: 140px 600px 100px;
+
+
+        }
+
+        .Header {
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+
+        }
+
+        .Header__left {
+            grid-column: 2/5;
+            margin-top: 10px;
+        }
+
+        .Header__right {
+            grid-column: 11/12;
+        }
+
+        .Header__left--left {
+            width: 200px;
+        }
+
+        .Header__right--right {
+            width: 80px
+        }
+
+        .main {
+            background-color: #F5F5F5;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .main__head {
+            margin-top: 20px;
+            grid-column: 2/3;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .main__middle {
+            grid-column: 2/3;
+            font-size: 30px;
+            margin: 0px;
+            font-weight: 600;
+        }
+        .main__last{
+            grid-column: 2/6;
+            font-size: 30px;
+            margin: 0px;
+            font-style: italic;
+            font-weight: 100;
+        }
+        .main__final{
+            grid-column: 2/7;
+            margin-bottom: 60px;
+        }
+
+        .footer {
+            background-color: white;
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .footer__left {
+            margin-top: 5px;
+            grid-column: 2/4;
+            justify-items: center;
+        }
+
+        .footer__right {
+            grid-column: 10/12;
+            margin-top: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrapper">
+        <div class="Header">
+            <div class="Header__left"><img class="Header__left Header__left--left" src="Colors&Click.jpg" /> </div>
+            <div class="Header__right"> <img class="Header__right Header__right--right" src="Colors&Clicks_Logo.jpg" />
+            </div>
+        </div>
+        <main class="main">
+            <div class="main__head">
+                Thanks
+            </div>
+            <div class="main__middle">
+                YOU ARE
+                AWESOME
+            </div class="main__last">
+          
+            <div  class="main__last">
+                WE JUST RECEIVED YOUR ORDER
+            </div>
+            <div class="main__final">
+                Please find below the order details and let us know if you enjoyed this
+purchase experience by giving feedback at the end of this boring order
+summary.
+
+            </div>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__left">
+                COLORS
+            </div>
+            <div class="footer__right">
+                COLORS
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

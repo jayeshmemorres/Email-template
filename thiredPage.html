@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .Wrapper {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 220px 400px 100px;
+        }
+
+        .header {
+            background-color: white;
+        }
+
+        .header__first {
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .header__first--left {
+            grid-column: 2/3;
+            margin-top: 25px;
+            width: 250px;
+
+        }
+
+        .header__first--right {
+            grid-column: 11/12;
+            width: 100px;
+        }
+
+        .header__second {
+            display: grid;
+            margin-top: 10px;
+            font-family: cursive;
+        }
+
+        .header__second--shop {
+            grid-column: 2/3;
+        }
+
+        .header__second--what {
+            grid-column: 4/6;
+        }
+
+        .header__second--new {
+            grid-column: 6/8;
+        }
+
+        .header__second--location {
+            grid-column: 8/9;
+        }
+
+        .header__second--line {
+            margin-top: 20px;
+            border-bottom: 5px solid #7398C4;
+        }
+
+        .main {
+            /* text-align: center; */
+
+        }
+
+        .main__img {
+
+
+            /* Preserve aspet ratio */
+            min-width: 100%;
+            max-height: 100%;
+        }
+
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+
+
+
+        }
+
+        .footer__title {
+            grid-column: 3/11;
+            font-weight: 600;
+            font-size: 36px;
+            gap: 4px;
+            line-height: 56px;
+
+        }
+
+        .footer__subtitle {
+            grid-column: 3/11;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: cursive;
+        }
+
+        .footer__text {
+            margin-top: 10px;
+            grid-column: 3/11;
+            line-height: 26px;
+            font-size: 18px;
+
+        }
+
+        .footer__button {
+            margin-top: 20px;
+            grid-column: 1/12;
+
+        }
+
+        .footer__button--style {
+            background-color: white;
+            padding: 10px 40px 10px 40px;
+            border: 3px solid black;
+            color: black;
+            font-weight: 700;
+        }
+
+        .footer__text--middle {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrapper">
+
+
+        <div class="header">
+            <div class="header__first ">
+                <img class="header__first header__first--left" src="Colors&Click.jpg">
+                <img class="header__first header__first--right" src="Colors&Clicks_Logo.jpg" />
+            </div>
+            <div class="header__second">
+                <div class="header__second header__second--shop">SHOP NOW</div>
+                <div class="header__second header__second--what">WHAT'NEW</div>
+                <div class="header__second header__second--new">NEWS</div>
+                <div class="header__second header__second--location">LOCATION</div>
+
+            </div>
+            <div class="header__second header__second--line"></div>
+        </div>
+        <div class="main">
+            <img class="main__img" src="offset_comp_772626-opt.jpg" />
+
+        </div>
+        <div class="footer">
+
+            <div class="footer__title footer__text--middle">
+                <pre>THANKS  FOR  YOUR  PATIENCE</pre>
+            </div>
+            <div class="footer__subtitle footer__text--middle">
+                We are delighted to have you with us.
+
+            </div>
+            <div class="footer__text footer__text--middle">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minus ut sint consectetur cum eveniet
+                voluptates unde amet excepturi, perspiciatis error quis facilis ex! Pariatur quos ducimus consectetur
+                nemo odio tempora quo perferendis quibusdam provident error? Quae esse expedita repellat.
+            </div>
+            <div class="footer__button footer__text--middle">
+                <button type="submit" class="footer__button footer__button--style">SHOP NOW</button>
+            </div>
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colors&click Second</title>
+</head>
+<style>
+        .Wrapper {
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-rows: 150px 600px 100px;
+        }
+
+        .header {
+            background-color: white;
+        }
+
+        .header__first {
+            display: grid;
+            margin-top: 10px;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        .header__first--left {
+            grid-column: 2/3;
+            width: 250px;
+
+        }
+
+        .header__first--right {
+            grid-column: 11/12;
+            width: 100px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            background-color: whitesmoke;
+
+
+
+        }
+
+        .footer__title {
+            grid-column: 3/11;
+            font-weight: 600;
+            font-size: 28px;
+            gap: 4px;
+            line-height: 56px;
+
+        }
+
+        .footer__subtitle {
+            grid-column: 3/11;
+            font-size: 22px;
+            font-weight: 600;
+            font-family: cursive;
+        }
+
+        .footer__text {
+            margin-top: 10px;
+            grid-column: 3/11;
+            line-height: 26px;
+            font-size: 18px;
+
+        }
+
+        .footer__button {
+            margin-top: 20px;
+            grid-column: 1/12;
+
+        }
+
+        .footer__button--style {
+            background-color: white;
+            padding: 5px px 4px 20px;
+            border: 3px solid black;
+            color: black;
+            font-weight: 700;
+        }
+
+        .footer__text--middle {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+</style>
+
+
+
+
+
+
+
+<body>
+    <div class="Wrapper">
+
+
+        <div class="header">
+            <div class="header__first ">
+                <img class="header__first header__first--left" src="Colors&Click.jpg">
+                <img class="header__first header__first--right" src="Colors&Clicks_Logo.jpg" />
+            </div>
+            
+           
+        </div>
+        <div class="footer">
+
+            <div class="footer__title footer__text--middle">
+                <pre>THANKS  FOR  YOUR  PATIENCE</pre>
+            </div>
+            <div class="footer__subtitle footer__text--middle">
+                We are delighted to have you with us.
+
+            </div>
+            <div class="footer__text footer__text--middle">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo minus ut sint consectetur cum eveniet
+                voluptates unde amet excepturi, perspiciatis error quis facilis ex! Pariatur quos ducimus consectetur
+                nemo odio tempora quo perferendis quibusdam provident error? Quae esse expedita repellat.
+            </div>
+            <div class="footer__button footer__text--middle">
+                <button type="submit" class="footer__button footer__button--style">CLICK TO GET STARTED</button>
+            </div>
+
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Colors&click</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    .main-page {
+        color: black;
+        margin-top: 30px;
+        display: grid;
+        grid-template-rows: 100px 700px 100px;
+    }
+
+    .navbar {
+        color: rgb(183, 196, 197);
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+
+    }
+
+    .navbar__left {
+        grid-column: 2/3;
+        margin-top: 10px;
+    }
+
+    .navbar__right {
+        grid-column: 11/12;
+        width: 80px;
+        align-items: end;
+    }
+
+    .navbar__left--image {
+        width: 250px;
+    }
+
+    .main {
+        background-color: whitesmoke;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .footer__left {
+        grid-column: 2/6;
+    }
+
+    .footer__right {
+        grid-column: 10/11;
+    }
+    .footer__left--clicklogo{
+        width: 200px;
+    }
+    .footer__left--cc{
+        width: 100px;
+    }
+</style>
+
+<body>
+    <div class="main-page">
+        <nav class="navbar">
+            <div class="navbar__left">
+                <img src="Colors&Click.jpg" class="navbar__left navbar__left--image" />
+            </div>
+            <div class="navbar__right">
+                <img src="Colors&Clicks_Logo.jpg" class="navbar__right navbar__right--logo" />
+            </div>
+        </nav>
+        <div class="main" id="main">
+
+        </div>
+        <div class="footer">
+            <div class="footer__left">
+                <!-- <img class="footer__left footer__left--clicklogo" src="Colors&Click.jpg" /> -->
+                colorandclick
+            </div>
+            <div class="footer__right">
+                <!-- <img class="footer__left footer__left--cc" src="Colors&Clicks_Logo.jpg" /> -->
+                support@colorandclick
+            </div>
+
+        </div>
+</body>
+
+</html>
