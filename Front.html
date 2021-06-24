@@ -15,7 +15,9 @@
     .main-page {
         color: black;
         margin-top: 30px;
+        width: 70%;
         display: grid;
+        margin: auto;
         grid-template-rows: 100px 700px 100px;
     }
 
@@ -29,6 +31,7 @@
     .navbar__left {
         grid-column: 2/3;
         margin-top: 10px;
+        width: 200px;
     }
 
     .navbar__right {
@@ -37,31 +40,28 @@
         align-items: end;
     }
 
-    .navbar__left--image {
-        width: 250px;
-    }
 
     .main {
         background-color: whitesmoke;
+        border-bottom: 5px solid #7398C4;
     }
 
     .footer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        align-content: center;
     }
 
     .footer__left {
         grid-column: 2/6;
+        font-size: 18px;
+     
     }
 
     .footer__right {
         grid-column: 10/11;
-    }
-    .footer__left--clicklogo{
-        width: 200px;
-    }
-    .footer__left--cc{
-        width: 100px;
+        font-size: 18px;
+           
     }
 </style>
 
@@ -69,10 +69,10 @@
     <div class="main-page">
         <nav class="navbar">
             <div class="navbar__left">
-                <img src="Colors&Click.jpg" class="navbar__left navbar__left--image" />
+                <img src="Colors&Click.jpg" class="navbar__left " />
             </div>
             <div class="navbar__right">
-                <img src="Colors&Clicks_Logo.jpg" class="navbar__right navbar__right--logo" />
+                <img src="Colors&Clicks_Logo.jpg" class="navbar__right" />
             </div>
         </nav>
         <div class="main" id="main">
@@ -80,11 +80,11 @@
         </div>
         <div class="footer">
             <div class="footer__left">
-                <!-- <img class="footer__left footer__left--clicklogo" src="Colors&Click.jpg" /> -->
+              
                 colorandclick
             </div>
             <div class="footer__right">
-                <!-- <img class="footer__left footer__left--cc" src="Colors&Clicks_Logo.jpg" /> -->
+               
                 support@colorandclick
             </div>
 
