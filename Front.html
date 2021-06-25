@@ -9,21 +9,24 @@
     <title>Colors&click</title>
 </head>
 <style>
-    body{
+    body {
         margin: 0px;
     }
+
     .main-page {
         color: black;
         margin-top: 30px;
-        width: 100%;
+        max-height: 800px;
+        max-width: 700px;
         display: grid;
         margin: auto;
-        grid-template-rows: 100px 400px 100px;
+        grid-template-rows: 100px 600px 100px;
     }
 
     .navbar {
         color: rgb(183, 196, 197);
         display: grid;
+        margin-top:20px;
         grid-template-columns: repeat(12, 1fr);
 
     }
@@ -31,19 +34,19 @@
     .navbar__left {
         grid-column: 2/3;
         margin-top: 10px;
-        width: 200px;
+        width: 140px;
     }
 
     .navbar__right {
         grid-column: 11/12;
-        width: 80px;
+        width: 60px;
         align-items: end;
     }
 
 
     .main {
-        background-color: whitesmoke;
-        border-bottom: 5px solid #7398C4;
+        /* background-color: rgb(48, 10, 10); */
+        border-bottom: 4px solid #7398C4;
     }
 
     .footer {
@@ -51,44 +54,38 @@
         grid-template-columns: repeat(12, 1fr);
         align-content: center;
         font-family: 'Noto Sans', sans-serif;
+        font-weight: 500;
     }
 
     .footer__left {
         grid-column: 2/6;
-        font-size: 18px;
-     
+        font-size: 12px;
+
     }
 
     .footer__right {
-        grid-column: 8/-1;
-        font-size: 18px;
-           
+        grid-column: 7/-1;
+        font-size: 12px;
+
     }
 </style>
 
 <body>
     <div class="main-page">
         <nav class="navbar">
-            <div class="navbar__left">
-                <img src="Colors&Click.jpg" class="navbar__left " />
-            </div>
-            <div class="navbar__right">
-                <img src="Colors&Clicks_Logo.jpg" class="navbar__right" />
-            </div>
+            <img src="Colors&Click.jpg" class="navbar__left " />
+            <img src="Colors&Clicks_Logo.jpg" class="navbar__right" />
+            
         </nav>
         <div class="main" id="main">
-
         </div>
         <div class="footer">
             <div class="footer__left">
-              
                 C O L O R S A N D C L I C K S . C O M
             </div>
             <div class="footer__right">
-               
                 S U P P O R T @ C O L O R S C L I C K S . C O M
             </div>
-
         </div>
 </body>
 

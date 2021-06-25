@@ -10,8 +10,9 @@
         .Wrapper {
             display: grid;
             height: 100vh;
-            width: 100%;
+            width: 700px ;
             margin-top: 30px;
+            margin: 0 auto;
             grid-template-rows: 120px 600px 100px;
 
 
@@ -21,18 +22,19 @@
             background-color: white;
             display: grid;
             grid-template-columns: repeat(12, 1fr);
+            margin-top: 15px;
 
         }
 
         .Header__left {
             grid-column: 2/5;
             margin-top: 10px;
-            width: 200px;
+            width: 160px;
         }
 
         .Header__right {
             grid-column: 11/12;
-            width: 80px
+            width: 60px
         }
 
         
@@ -46,9 +48,9 @@
         }
 
         .main__head {
-            margin-top: 20px;
+            margin-top: 25px;
             grid-column: 2/3;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 600;
             
         }
@@ -61,60 +63,37 @@
         }
         .main__last{
             grid-column: 2/7;
-            font-size: 19px;
+            font-size: 20px;
             margin-top: 5px;
             font-family: 'Shadows Into Light', cursive;
             font-weight: 200;
         }
         .main__final{
-            grid-column: 2/7;
-            margin-top: 5px;
-            margin-bottom: 60px;
+            grid-column: 2/8;
+    margin-top: 10px;
+    margin-bottom: 60px;
+    line-height: 20.6px;
+    font-size: 14px;
             
         }
 
-        /* .footer {
-            background-color: white;
-            margin-top: 5px;
-            font-size: 9px;
-            display: grid;
-            grid-template-columns:  minmax(min-content, 1fr) minmax(min-content, 1fr);
-            justify-content: center;    
-            align-content: center;
-            
-        }
-
-        .footer__left {
-            margin-top: 5px;
-
-            display: grid;
-            align-content: center;
-            justify-content: center;
-            
-        }
-
-        .footer__right {
-            align-content: center;
-           
-            justify-content: center;
-
-        } */
         .footer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         align-content: center;
+        font-weight: 500;
         font-family: 'Noto Sans', sans-serif;
     }
 
     .footer__left {
         grid-column: 2/6;
-        font-size: 18px;
+        font-size: 12px;
      
     }
 
     .footer__right {
         grid-column: 9/-1;
-        font-size: 18px;
+        font-size: 12px;
            
     }
     </style>
@@ -129,7 +108,7 @@
         </div>
         <main class="main">
             <div class="main__head">
-                Thanks
+                THANKS
             </div>
             <div class="main__middle">
                 YOU ARE
